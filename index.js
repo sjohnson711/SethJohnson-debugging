@@ -19,7 +19,7 @@ let maxNumberOfAttempts = 5; //Bug #1 changed to let so that I can change it lat
 // > getRandomNumber(1, 50)
 // <- 11
 function getRandomNumber(min, max) {
-  return Math.floor(Math.random() * (max - min)) + min;
+  return Math.floor(Math.random() * (max - min)) - min; //Bug#2 fixed to -min
 }
 
 function checkGuess() {
